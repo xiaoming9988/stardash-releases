@@ -1,0 +1,1 @@
+{"apkUrl":"https://raw.githubusercontent.com/xiaoming9988/stardash-releases/main/StarDash-NineWorlds-1.0.15.apk","notes":"1.0.15：着陆复活位置夹紧到甲板中心±120px，死在甲板附近原样复活，死得远拉回甲板边再复活，不再复活—坠毁死循环；另含1.0.14的原地复活与1.0.13的满屏自适应。","versionCode":16,"versionName":"1.0.15"}
