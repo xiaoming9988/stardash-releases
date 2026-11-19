@@ -1,0 +1,34 @@
+name: Fetch APK
+
+# The GitHub API rejects files this large via the contents/blob endpoints,
+# and git push cannot use the fine-grained PAT from outside GitHub.
+# This workflow downloads the APK from a temporary direct link and commits
+# it to the repo using the workflow's own GITHUB_TOKEN.
+on:
+  workflow_dispatch:
+    inputs:
+      apk_url:
+        description: "Direct URL of the APK to publish"
+        required: true
+        default: "https://muse.ai/files/1395046743701396/1880008599862255/uopbmvmtrsd4a8ziv782w2c4/StarDash-NineWorlds-1.0.15.apk"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download APK
+        run: |
+          curl -L -o StarDash-NineWorlds-1.0.15.apk "${{ inputs.apk_url }}"
+          echo "1ad231eb5a8977efdb38de93da56bde4341fcba87d4172597025888cfc39d9b9  StarDash-NineWorlds-1.0.15.apk" | sha256sum -c -
+          ls -l StarDash-NineWorlds-1.0.15.apk
+      - name: Commit APK
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add StarDash-NineWorlds-1.0.15.apk
+          git commit -m "Publish Star Dash: Nine Worlds 1.0.15 APK (versionCode 16)" || echo "nothing to commit"
+          git push
