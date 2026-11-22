@@ -10,7 +10,7 @@ on:
       apk_url:
         description: "Direct URL of the APK to publish"
         required: true
-        default: "https://muse.ai/files/1395046743701396/1107019042293110/rbvq085ibpznfdc83far1tuv/StarDash-NineWorlds-1.0.18.apk"
+        default: "https://muse.ai/files/1395046743701396/1107019042293110/rbvq085ibpznfdc83far1tuv/StarDash-NineWorlds-1.0.21.apk"
 
 permissions:
   contents: write
@@ -22,13 +22,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Download APK
         run: |
-          curl -L -o StarDash-NineWorlds-1.0.18.apk "${{ inputs.apk_url }}"
-          echo "cbc0a4505e31239db2a91f35f1dabc957f135426f7e7130f1f229928c34d04d2  StarDash-NineWorlds-1.0.18.apk" | sha256sum -c -
-          ls -l StarDash-NineWorlds-1.0.18.apk
+          curl -L -o StarDash-NineWorlds-1.0.21.apk "${{ inputs.apk_url }}"
+          echo "fba00ae74bb0357ea0e28cf6f5484987fd77ebbb1a4ece43423dedfaba2197db  StarDash-NineWorlds-1.0.21.apk" | sha256sum -c -
+          ls -l StarDash-NineWorlds-1.0.21.apk
       - name: Commit APK
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add StarDash-NineWorlds-1.0.18.apk
-          git commit -m "Publish Star Dash: Nine Worlds 1.0.18 APK (versionCode 19)" || echo "nothing to commit"
+          git add StarDash-NineWorlds-1.0.21.apk
+          git commit -m "Publish Star Dash: Nine Worlds 1.0.21 APK (versionCode 22)" || echo "nothing to commit"
           git push
