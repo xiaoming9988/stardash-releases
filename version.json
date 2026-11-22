@@ -1,6 +1,6 @@
 {
-  "apkUrl": "https://raw.githubusercontent.com/xiaoming9988/stardash-releases/main/StarDash-NineWorlds-1.0.23.apk",
-  "notes": "1.0.23：修了着陆段长按飞不起来——着陆时按住超过 0.1 秒不动，飞船缓慢爬升；拖动仍跟手对准甲板，松手自由落体。还包含1.0.22的跑局背景音乐修复、1.0.21的菜单弹窗修复与1.0.20的节奏障碍组、惯性手感。",
-  "versionCode": 24,
-  "versionName": "1.0.23"
+  "apkUrl": "https://raw.githubusercontent.com/xiaoming9988/stardash-releases/main/StarDash-NineWorlds-1.0.24.apk",
+  "notes": "1.0.24：修了着陆段长按爬升在真机上不触发——1.0.23 用静止帧数判长按，手指抖动不断清零；现改成累计手指移动量（抖动攒不起来，真拖动一下就超），着陆时按住就爬升，拖动仍跟手对准甲板，松手自由落体。还包含1.0.22的跑局背景音乐修复、1.0.21的菜单弹窗修复与1.0.20的节奏障碍组、惯性手感。",
+  "versionCode": 25,
+  "versionName": "1.0.24"
 }
