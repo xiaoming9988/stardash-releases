@@ -1,6 +1,6 @@
 {
-  "apkUrl": "https://raw.githubusercontent.com/xiaoming9988/stardash-releases/main/StarDash-NineWorlds-1.0.18.apk",
-  "notes": "1.0.18：每关有了自己的视觉地标（水星巨大太阳+熔岩辉光等）+近景尘埃；每局随机任务+30%/60%三选一临时模块；擦边奖励攒能量，满了4秒冲刺（无敌、得分翻倍、金色尾焰）。",
-  "versionCode": 19,
-  "versionName": "1.0.18"
+  "apkUrl": "https://raw.githubusercontent.com/xiaoming9988/stardash-releases/main/StarDash-NineWorlds-1.0.21.apk",
+  "notes": "1.0.21：修了主菜单弹窗——弹窗瘦身加限高，底下的“音效设置/检查更新”不再被顶出屏幕；弹窗移到手势层之外，点按钮只触发按钮。还包含1.0.20的节奏障碍组（预警→穿越→缓冲）与惯性手感（飞船带惯性与倾斜，设置里可切回经典）。",
+  "versionCode": 22,
+  "versionName": "1.0.21"
 }
