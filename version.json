@@ -1,6 +1,6 @@
 {
-  "apkUrl": "https://raw.githubusercontent.com/xiaoming9988/stardash-releases/main/StarDash-NineWorlds-1.0.17.apk",
-  "notes": "1.0.17：航程改公里（水星80000km，约1800km/s）；买复活包后飞船飞不起来已修（坠毁/复活时清掉卡住的触点）；底部贴着海面也有陨石和拾取；另含1.0.16的着陆复活落在甲板上+保护期自动回正。",
-  "versionCode": 18,
-  "versionName": "1.0.17"
+  "apkUrl": "https://raw.githubusercontent.com/xiaoming9988/stardash-releases/main/StarDash-NineWorlds-1.0.18.apk",
+  "notes": "1.0.18：每关有了自己的视觉地标（水星巨大太阳+熔岩辉光等）+近景尘埃；每局随机任务+30%/60%三选一临时模块；擦边奖励攒能量，满了4秒冲刺（无敌、得分翻倍、金色尾焰）。",
+  "versionCode": 19,
+  "versionName": "1.0.18"
 }
