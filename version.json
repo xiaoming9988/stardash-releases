@@ -1,1 +1,6 @@
-{"apkUrl":"https://raw.githubusercontent.com/xiaoming9988/stardash-releases/main/StarDash-NineWorlds-1.0.15.apk","notes":"1.0.15：着陆复活位置夹紧到甲板中心±120px，死在甲板附近原样复活，死得远拉回甲板边再复活，不再复活—坠毁死循环；另含1.0.14的原地复活与1.0.13的满屏自适应。","versionCode":16,"versionName":"1.0.15"}
+{
+  "apkUrl": "https://raw.githubusercontent.com/xiaoming9988/stardash-releases/main/StarDash-NineWorlds-1.0.17.apk",
+  "notes": "1.0.17：航程改公里（水星80000km，约1800km/s）；买复活包后飞船飞不起来已修（坠毁/复活时清掉卡住的触点）；底部贴着海面也有陨石和拾取；另含1.0.16的着陆复活落在甲板上+保护期自动回正。",
+  "versionCode": 18,
+  "versionName": "1.0.17"
+}
